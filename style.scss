@@ -2,6 +2,8 @@
 @import 'carousel';
 @import 'valorBloqueada';
 @import 'promociones';
+@import 'footer';
+
 
 body {
   background: #fffbd5;
@@ -41,5 +43,20 @@ body {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+main {
+  .desarrolladores {
+
+    .card {
+      border-radius: 15px;
+      padding: 10px;
+      border: hidden;
+      color: #d0d0d0;
+      background: #EB5757;
+      background: -webkit-linear-gradient(to right, #000000, #EB5757);
+      background: linear-gradient(to right, #000000, #EB5757);
+    }
   }
 }

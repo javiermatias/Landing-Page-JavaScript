@@ -107,11 +107,13 @@ main {
                 border-radius: 15px;
                 height: 50px;
                 transition: all 1.4s 0s ease-in-out;
+                font-size: 25px;
             }
 
             button:hover {
                 cursor: pointer;
-                color: #d0d0d0;
+                color: #616060;
+                text-shadow: 0px 0px 7px rgba(194, 194, 194, 0.664);
                 background: #c94b4b;
                 background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
                 background: linear-gradient(to right, #4b134f, #c94b4b);
@@ -235,7 +237,7 @@ main {
 
                 button:hover {
                     cursor: pointer;
-                    color: #d0d0d0;
+                    color: #616060;
                     background: #c94b4b;
                     background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
                     background: linear-gradient(to right, #4b134f, #c94b4b);
@@ -359,7 +361,7 @@ main {
 
                 button:hover {
                     cursor: pointer;
-                    color: #d0d0d0;
+                    color: #616060;
                     background: #c94b4b;
                     background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
                     background: linear-gradient(to right, #4b134f, #c94b4b);
