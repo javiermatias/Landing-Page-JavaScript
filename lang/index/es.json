@@ -1,7 +1,8 @@
 {
+  "app-title": "Mi app pesona",
 
-    "app-title": "Mi app pesona",
-  
-    "lead": "Este es mi lugar en el mundo!"
-  
-  }
+  "lead": "Este es mi lugar en el mundo!",
+  "app-slideh5": "¿Qué es Prode Qatar 2022?",
+  "app-slide1": "Es un juego online de pronóstico deportivo para el Mundial de Fútbol Qatar 2022. Juega y compite con miles jugadores de todo el mundo. El jugador que más partidos acierta",
+  "app-slide1P": "SE LLEVA EL POZO"
+}

@@ -1,7 +1,8 @@
 {
+  "app-title": "My Appy Apperson",
 
-    "app-title": "My Appy Apperson",
-  
-    "lead": "Welcome to my little spot on the interwebs!"
-  
-  }
+  "lead": "¿Welcome to my little spot on the interwebs!",
+  "app-slideh5": "What is Prode Qatar 2022?",
+  "app-slide1": "It is an online sports prediction game for the Qatar 2022 World Cup. Play and compete with thousands of players from all over the world. The player who hits the most matches",
+  "app-slide1P": "WINS THE POT"
+}

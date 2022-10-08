@@ -1,0 +1,495 @@
+header .navbar {
+  /* background-color: #721630; */
+  background: #fffbd5;
+  background: -webkit-linear-gradient(to left, #721630, #e7e6e3);
+  background: linear-gradient(to left, #721630, #d0d0d0);
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 2px 1px #fff;
+}
+header .navbar .img-logo {
+  width: 20%;
+  height: 80px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .img-logo img {
+  width: 80px;
+  height: 80px;
+}
+header .navbar .button-menu {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar .button-menu .navbar-toggler {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  background-color: #d9ddd9;
+  box-shadow: #aaa8a8 2px 0px 2px 0;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+header .navbar .navbar-collapse .navbar-nav li {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  width: 30%;
+}
+header .navbar .navbar-collapse .navbar-nav li a {
+  text-align: center;
+  color: #d9ddd9;
+  transition: all 1.4s 0s ease-in-out;
+}
+header .navbar .navbar-collapse .navbar-nav li a:hover {
+  /* color: #db2b5d; */
+  background: #DB2B5D;
+  background: repeating-radial-gradient(ellipse farthest-corner at left center, #DB2B5D 0%, #787A78 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
+  text-shadow: 1px 0px 5px rgba(233, 81, 124, 0.5882352941);
+  border-bottom: 1px solid #fff;
+}
+@media screen and (min-width: 992px) {
+  header .navbar {
+    background-color: #721630;
+    height: 80px;
+    display: block;
+    flex-direction: row;
+  }
+  header .navbar .button-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar {
+    background-color: #721630;
+    height: 80px;
+    display: block;
+    flex-direction: row;
+  }
+  header .navbar .navbar-collapse {
+    background-color: #721630;
+    width: 100%;
+  }
+  header .navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  header .navbar .navbar-collapse .navbar-nav li {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  header .navbar .navbar-collapse .navbar-nav li borde a {
+    text-align: left;
+    color: #d9ddd9;
+    transition: all 1.4s 0s ease-in-out;
+  }
+  header .navbar .navbar-collapse .navbar-nav li a:hover {
+    /* color: #db2b5d; */
+    background: #DB2B5D;
+    background: repeating-radial-gradient(ellipse farthest-corner at left center, #DB2B5D 0%, #787A78 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+    text-shadow: 1px 0px 5px rgba(233, 81, 124, 0.5882352941);
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  margin-top: 35px;
+  margin-bottom: -35px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main {
+  background: #fffbd5;
+  background: -webkit-linear-gradient(to left, #721630, #e7e6e3);
+  background: linear-gradient(to left, #721630, #d0d0d0);
+}
+main .contenedor-trending-gifos {
+  background-image: url(/assets/img-carousel.svg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+main .contenedor-trending-gifos .contenedor-flecha-izquierda {
+  background-color: none;
+}
+main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda {
+  background: none;
+  border: none;
+}
+main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda img {
+  width: 50px;
+  height: 50px;
+}
+main .contenedor-trending-gifos .contenedor-carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
+main .contenedor-trending-gifos .contenedor-carousel .carousel {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin: auto;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  height: 80vh;
+  padding: 15px;
+  border-radius: 25px 5px 5px 25px;
+}
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 h5 {
+  width: 100%;
+  padding: 20px;
+  color: #f3f3f3;
+  font-size: 50px;
+}
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 p {
+  width: 100%;
+  padding: 20px;
+  color: #f3f3f3;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha {
+  background: none;
+  border: none;
+}
+main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda {
+    background-color: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda img {
+    width: 50px;
+    height: 50px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    justify-content: center;
+    height: 80vh;
+    padding: 15px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 h5 {
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 30px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 p {
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda {
+    background-color: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda img {
+    width: 25px;
+    height: 25px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    justify-content: center;
+    height: 80vh;
+    padding: 5px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 h5 {
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 30px;
+    height: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda {
+    background-color: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-izquierda .flecha-izquierda img {
+    width: 25px;
+    height: 25px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    justify-content: center;
+    height: 90vh;
+    padding: 5px;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 h5,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 h5 {
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 25px;
+    height: auto;
+  }
+  main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides3 p,
+main .contenedor-trending-gifos .contenedor-carousel .carousel .text .slides4 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha {
+    background: none;
+    border: none;
+  }
+  main .contenedor-trending-gifos .contenedor-flecha-derecha .flecha-derecha img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
